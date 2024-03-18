@@ -1,0 +1,82 @@
+<!-- Daniel Castañeda -->
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=1024">
+        <title>Contacto - Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-contacto.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div class="contenedor-header">
+                <h1><img src="img/logo.png" alt="Logo"></h1>
+                <nav>
+                    <ul class="navegacion">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="contacto">
+            <form>
+                <div class="block">
+                    <label for="nombreApellido">Nombre y Apellido</label>
+                    <input type="text" id="nombreApellido" placeholder="Nombre completo" required>
+                </div>
+                <div class="block">
+                    <label for="correoElectronico">Correo Electronico</label>
+                    <input type="email" id="correoElectronico" placeholder="correo@dominio.com" required>
+                </div>
+                <div class="block">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" placeholder="XX-XXXX-XXXX" required>
+                </div>
+                <div class="block">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" required></textarea>
+                </div>
+                <fieldset>
+                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                    <label><input type="radio" name="contacto" value="email">Email</label>
+                    <label><input type="radio" name="contacto" value="telefono">Teléfono</label>
+                    <label><input type="radio" name="contacto" value="whatsapp" checked>WhatsApp</label>
+                </fieldset>
+                <fieldset>
+                    <legend>¿En que horario lo podemos contactar?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+                <div>
+                    <label><input type="checkbox" id="novedades" class="checkbox" value="novedades" checked> Recibir novedades de la Barbería Alura</label>
+                    <input type="submit" value="Enviar formulario" class="enviar">
+                </div>
+            </form>
+        </main>
+
+        <footer>
+
+            <img src="img/logo-blanco.png" alt="Logo" class="rotate">
+            <p class="copyright">&copy Copyright Barbería Alura - 2020</p>
+
+        </footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,60 @@
+/* Daniel Castañeda */
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.contenedor-header {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.header nav {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+.header nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+.header nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.header nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+footer {
+    text-align: center;
+    background: url(img/bg.jpg);
+    padding: 40px;
+}
+
+.rotate {
+    transition: 1s all;
+}
+
+.rotate:hover {
+    transform: rotate(360deg);
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
